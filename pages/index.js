@@ -24,7 +24,7 @@ export default function Home({ productData, rewards }) {
   });
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 max-w-screen-md">
 
       <div className="mb-4 bg-orange-50 rounded-b-3xl p-4 flex justify-between">
         <span className="text-xl font-bold" > {productData.title} </span>
@@ -36,10 +36,9 @@ export default function Home({ productData, rewards }) {
             </div> : <span className="font-bold text-2xl">Variant Unavailable</span >}
       </div>
 
-      <div >
-        <div className="mx-auto w-1/2 " >
-          <img src={productData.image.src} />
-        </div>
+      <div className="mx-auto w-3/4">
+          <img className="mx-auto w-1/2 max-h-96 " src={productData.image.src} />
+
         <div className="mx-auto text-3xl" >
           <div className="py-3"> Size: </div>
           <div className="grid grid-cols-3 gap-5" >
