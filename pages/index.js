@@ -2,7 +2,7 @@ import { ApolloClient, InMemoryCache, gql, useMutation } from '@apollo/client';
 import { useEffect, useState } from "react";
 import { getCurrentReward, getBestInitialVariant, findAppropriateVariant } from "../helpers/helpers.ts";
 import OptionButton from '../components/OptionButton.tsx';
-import { ADD_TO_CART } from '../mutation/mutation';
+import { ADD_TO_CART } from '../mutation/mutation.ts';
 
 
 export default function Home({ productData, rewards }) {

@@ -24,5 +24,5 @@ export const findAppropriateVariant = (variants: VariantType[], options: string[
 
     const [option1, option2] = options;
 
-    return variants.find(el => el.option1 === option1 && el.option2 === option2) || {};
+    return variants.find(variant => variant.option1 === option1 && variant.option2 === option2) || {};
 }
